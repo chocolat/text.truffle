@@ -1,0 +1,22 @@
+(trigger
+    (key [[ctrl][shift][cmd]E]))
+
+(name [AES Decrypt Document / Selection With Password…])
+
+(input selection document)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [get_pw () {
+  ruby -rui -e"print TextMate::UI.request_secure_string(:title => 'Decrypt AES 128 Encrypted Text', :prompt => '$1', :button1 => '$2', :button2 => 'Cancel').to_s"
+}
+
+pw=$(get_pw 'What is the password?' Decrypt)
+[[ -z "$pw" ]] && exit_discard
+
+if ! openssl enc -d -aes128 -base64 -pass "pass:$pw"; then
+   exit_show_tool_tip
+fi
+])

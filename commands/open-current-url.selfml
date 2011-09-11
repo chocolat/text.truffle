@@ -1,0 +1,15 @@
+(trigger
+    (key [[cancel]]))
+
+(name [Open Current URL])
+
+(only-in [markup.underline.link - markup.underline.link.relative])
+
+(input selection scope)
+
+(output nothing)
+
+(save nothing)
+
+(script [open "$(cat)"
+])

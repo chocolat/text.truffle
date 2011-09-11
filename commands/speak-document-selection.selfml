@@ -1,0 +1,11 @@
+(trigger)
+
+(name [Speak Document / Selection])
+
+(input selection)
+
+(output nothing)
+
+(save nothing)
+
+(script [say `echo "$TM_SELECTED_TEXT"` &])

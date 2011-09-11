@@ -1,0 +1,11 @@
+(detector
+    (extension txt))
+
+(in markup.bold)
+
+(in markup.italic)
+
+(in markup.underline)
+
+(in [markup.underline.link, markup.raw]
+    (no-spellchecking))

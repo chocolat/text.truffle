@@ -1,0 +1,11 @@
+(trigger)
+
+(name [Add Line Numbers to Document / Selection])
+
+(input selection document)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [cat -n|expand -8])

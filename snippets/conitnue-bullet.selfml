@@ -1,0 +1,9 @@
+(name [Continue Bullet])
+
+(trigger
+    (key [[cancel]]))
+
+(only-in meta.bullet-point)
+
+(snippet [
+ ])

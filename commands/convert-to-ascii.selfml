@@ -1,0 +1,11 @@
+(trigger)
+
+(name [Transliterate Word / Selection to ASCII])
+
+(input selection word)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [iconv -c -f utf-8 -t ASCII//TRANSLIT])

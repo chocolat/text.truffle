@@ -1,0 +1,11 @@
+(trigger)
+
+(name [Randomize Lines in Document / Selection])
+
+(input selection)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [ruby -pe'$_ = (rand * 100000000).round.to_s + "\t" + $_'|sort|cut -f2-])

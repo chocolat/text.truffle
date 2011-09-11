@@ -1,0 +1,12 @@
+(trigger
+    (key [[f5]]))
+
+(name [Sort Lines & Remove Duplicates])
+
+(input selection)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [sort -f|uniq])

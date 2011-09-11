@@ -1,0 +1,6 @@
+(name [Current Date — YYYY-MM-DD])
+
+(trigger
+    (tab isoD))
+
+(snippet [`date +%Y-%m-%d`])

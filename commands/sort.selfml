@@ -1,0 +1,12 @@
+(trigger
+    (key [[f5]]))
+
+(name [Sort Lines in Document / Selection])
+
+(input selection document)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [sort -f])

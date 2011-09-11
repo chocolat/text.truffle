@@ -1,0 +1,6 @@
+(name [Copyright Notice])
+
+(trigger
+    (tab [c)]))
+
+(snippet [(c) Copyright `date +%Y` %{TM_FULLNAME}. All Rights Reserved. ])

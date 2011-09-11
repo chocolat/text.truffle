@@ -1,0 +1,11 @@
+(trigger)
+
+(name [Remove Trailing Spaces in Document / Selection])
+
+(input selection document)
+
+(output replace-selected)
+
+(save nothing)
+
+(script [perl -pe 's/[\t ]+$//g'])

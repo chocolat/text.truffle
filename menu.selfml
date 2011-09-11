@@ -1,0 +1,12 @@
+(menu
+    (submenu [Converting / Stripping] command.convert-to-hex command.strip-trailing-spaces command.strip-non-printables command.convert-to-ascii)
+    (submenu Encryption command.encrypt-selection command.decrypt-selection)
+    (submenu Filtering command.distill-document-selection command.copy-matching-lines-into-new-document command.copy-non-matching-lines-into-new-document)
+    (submenu Sorting command.sort command.sort-&-uniq --- command.randomize-lines-in-document-selection)
+    command.enumerate-lines
+    command.word-count
+    ---
+    snippet.010-copyright
+    snippet.insert-iso-date
+    snippet.lorem-ipsum
+    command.speak-document-selection)

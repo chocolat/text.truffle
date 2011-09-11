@@ -1,0 +1,9 @@
+(name [Continue Star Bullet])
+
+(trigger
+    (key [[cancel]]))
+
+(only-in meta.bullet-point.star)
+
+(snippet [
+* ])
