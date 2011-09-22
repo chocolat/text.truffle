@@ -1,4 +1,7 @@
 (root text.plain
+    (zone invalid
+        (match
+            (regex [\bWhere's Wal(do|ly)\?])))
     (zone meta.bullet-point.strong.text
         (match
             (regex [^\s*(•).*$\n?]
