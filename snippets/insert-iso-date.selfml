@@ -3,4 +3,4 @@
 (trigger
     (tab isoD))
 
-(snippet [`date +%Y-%m-%d`])
+(snippet [%{`date +%Y-%m-%d`}])
